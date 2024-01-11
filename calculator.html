@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <table class="calc-body">
+            <tr>
+                <td>
+                    <input type="text" id="hidden-screen">
+                </td>
+            </tr>
+            <tr id="screen-holder">
+                <td><input type="text" readonly id="screen" placeholder="0"></td>
+           
+                <td><input type="text" readonly id="calc-result"></td>
+            </tr>
+           <tr>
+
+            <tr class="top-btn">
+                <td><input type="button" class="dif-btn" value="sin"></td>
+                <td><input type="button" class="dif-btn" value="cos"></td>
+                <td><input type="button" class="dif-btn" value="tan"></td>
+                <td><input type="button" class="dif-btn" value="log"></td>
+               </tr>
+
+            <td><input type="button" class="btn" value="7"></td>
+            <td ><input type="button" class="btn" value="8"></td>
+            <td><input type="button" class="btn" value="9"></td>
+            <td><input type="button" class="dif-btn" value="DEL" onclick="del()" id="remove"></td>
+            <td><input type="button" class="dif-btn" value="AC" onclick="ac()"></td>
+           </tr>
+
+           <tr>
+            <td><input type="button" class="btn" value="4"></td>
+            <td><input type="button" class="btn" value="5"></td>
+            <td><input type="button" class="btn" value="6"></td>
+            <td><input type="button" class="btn" value="x"></td>
+            <td><input type="button" class="btn" value="/"></td>
+           </tr>
+
+           <tr>
+            <td><input type="button" class="btn" value="1"></td>
+            <td><input type="button" class="btn" value="2"></td>
+            <td><input type="button" class="btn" value="3"></td>
+            <td><input type="button" class="btn" value="+"></td>
+            <td><input type="button" class="btn" value="-"></td>
+           </tr>
+
+           <tr>
+            <td><input type="button" class="btn" value="0"></td>
+            <td><input type="button" class="btn" value="."></td>
+            <td><input type="button" class="dif-btn" value="EXP" onclick="exp()"></td>
+            <td><input type="button" class="dif-btn" value="Ans" onclick="ans()"></td>
+            <td><input type="button" class="dif-btn" value="=" id="equal-to"></td>
+           </tr>
+
+        </table>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
